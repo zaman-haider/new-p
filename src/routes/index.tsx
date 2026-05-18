@@ -15,8 +15,8 @@ import team3 from "@/assets/team-3.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "CutPayroll — You hired seven people to do the work of two" },
-      { name: "description", content: "We replace bloated back-office departments with one quiet system. Faster, cheaper, no drama." },
+      { title: "CutPayroll — Your business isn’t the problem, your staff is." },
+      { name: "description", content: "The bookkeeper who misses deadlines. The marketing coordinator who posts on Instagram twice a month. The compliance officer who copy-pastes spreadsheets all day. You're paying salaries for output a single system could deliver — faster, cheaper, and without the drama." },
     ],
   }),
   component: Home,
