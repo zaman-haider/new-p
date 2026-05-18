@@ -15,8 +15,8 @@ import team3 from "@/assets/team-3.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "CutPayroll — Your business isn’t the problem, your staff is." },
-      { name: "description", content: "The bookkeeper who misses deadlines. The marketing coordinator who posts on Instagram twice a month. The compliance officer who copy-pastes spreadsheets all day. You're paying salaries for output a single system could deliver — faster, cheaper, and without the drama." },
+      { title: "CutPayroll — You hired seven people to do the work of two" },
+      { name: "description", content: "We replace bloated back-office departments with one quiet system. Faster, cheaper, no drama." },
     ],
   }),
   component: Home,
@@ -159,12 +159,10 @@ function Home() {
             </p>
           </div>
           <h1 className="reveal reveal-delay-1 mt-6 font-serif text-[44px] sm:text-6xl md:text-7xl lg:text-[112px] leading-[0.95] text-balance max-w-5xl">
-            You hired seven people to do the work of <em className="text-primary">two.</em>
+            Your business isn’t the problem, your <em className="text-primary">staff</em> is. 
           </h1>
           <p className="reveal reveal-delay-2 mt-8 max-w-xl text-base md:text-lg text-muted-foreground leading-relaxed">
-            The bookkeeper who misses deadlines. The marketing coordinator who posts twice a month.
-            The compliance officer who copy-pastes spreadsheets all day. You're paying salaries for
-            output a single system could deliver — faster, cheaper, and without the drama.
+            The bookkeeper who misses deadlines. The marketing coordinator who posts on Instagram twice a month. The compliance officer who copy-pastes spreadsheets all day. You're paying salaries for output a single system could deliver — faster, cheaper, and without the drama.
           </p>
           <div className="reveal reveal-delay-3 mt-10 flex flex-wrap items-center gap-4">
             <Link to="/contact" className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3.5 text-sm font-medium hover-lift">
