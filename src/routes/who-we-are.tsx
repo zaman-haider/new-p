@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import team1 from "@/assets/team-1.jpg";
 import team2 from "@/assets/team-2.jpg";
 import team3 from "@/assets/team-3.jpg";
-import team4 from "@/assets/team-4.jpg";
+
 import heroExec from "@/assets/hero-exec.jpg";
 
 export const Route = createFileRoute("/who-we-are")({
@@ -18,10 +18,10 @@ export const Route = createFileRoute("/who-we-are")({
 });
 
 const team = [
-  { img: team1, name: "Marcus Hale", role: "Co-founder, CEO", bio: "Ran ops for a $40M industrial holding co. Cut its back office in half — by accident." },
-  { img: team2, name: "Elena Rivers", role: "Co-founder, COO", bio: "Ex–Big Four auditor who got tired of watching companies pay for the same mistake twice." },
-  { img: team3, name: "Sam Okafor", role: "Co-founder, CTO", bio: "Built automation systems for three Fortune 500s before deciding mid-market needed it more." },
-  { img: team4, name: "Diana Park", role: "Co-founder, Head of Deployment", bio: "20 years in finance ops. Has fired more useless software than most people have used." },
+  { img: team1, name: "Brent Franklin", role: "Founder & Chief Executive Officer, Rise Capital Group", bio: "Founder and CEO of Rise Capital Group, a privately held investment firm focused on oil and gas acquisition and development. Brent has built and scaled multiple seven and eight-figure companies while overseeing significant investor capital across active energy ventures. With a blue-collar, hands-on background and experience in real estate, drilling, and oilfield operations, Brent brings a disciplined and operationally driven approach to business. A Texas native and former Military Police officer, he is known for leadership, execution, and building ventures centered around long-term growth and responsible domestic energy development." },
+  
+  { img: team2, name: "Daniel Lehotsky", role: "CO FOUNDER, GROWTH & MARKETING STRATEGY", bio: "Co Founder and growth strategist with a background in digital marketing, paid advertising, lead generation, automation, and brand positioning. Daniel has built his experience around helping businesses increase visibility, improve customer acquisition, and create marketing systems designed to drive measurable revenue. With a focus on performance, strategy, and digital infrastructure, Daniel brings a strong understanding of how to connect attention with business growth. His work spans campaign strategy, advertising funnels, CRM workflows, audience targeting, and conversion focused marketing." },
+  { img: team3, name: "Lyth Elkour", role: "Co-Founder, Sales & Operations", bio: "Lyth ne high-performance sales se apna career shuru kiya, Uplink Ads co-found kiya, aur fir CutPayroll ke operations ko expand kiya. Woh direct client acquisition, revenue growth, aur pressure mein efficiently scale karne wale AI systems banane ke liye jaane jaate hain. Unka focus execution, relationships, aur long-term business growth par hai. Unka sales, operations, aur execution ko bridge karne ka tarika multiple ventures ke expansion mein madadgar raha hai. Woh client relationships aur strategy mein actively involved rehte hain , aur unka approach accountability aur sustainable growth par emphasize karta hai." },
 ];
 
 const principles = [
@@ -48,17 +48,17 @@ function WhoPage() {
             <h2 className="mt-6 font-serif text-4xl md:text-5xl leading-tight">A company started by accident.</h2>
           </div>
           <div className="lg:col-span-7 space-y-6 text-lg text-muted-foreground leading-relaxed">
-            <p>In 2021, Marcus was running ops for an industrial holding company in Houston. Twelve back-office hires. Six software stacks. Quarterly close took eight weeks.</p>
-            <p>He started writing scripts on weekends. By the third quarter, the team was three people. By the fourth, the close took two days. By the next year, three other CEOs asked how he did it.</p>
-            <p>That's CutPayroll. We didn't set out to build a product. We built a thing that worked, and other operators wanted it.</p>
+            <p>CutPayroll started where most good companies start: with operators who got tired of watching the same back-office waste play out across every mid-market business they touched.</p>
+            <p>Brent, Daniel, and Lyth had each spent years inside industrial, sales, and operations roles — signing real checks, sitting through real audits, and watching capable people pinned to work that systems should do overnight.</p>
+            <p>So they built the system they wished they'd had. Quiet, always-on, plugged into the tools their teams already used. Other operators saw it, asked for it, and CutPayroll became a company.</p>
           </div>
         </div>
       </section>
 
       <section className="container-x py-24 md:py-32 border-b border-border">
         <p className="eyebrow">The team</p>
-        <h2 className="mt-6 font-serif text-4xl md:text-6xl leading-tight max-w-4xl">Four founders. <em className="text-primary">Zero MBAs.</em></h2>
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <h2 className="mt-6 font-serif text-4xl md:text-6xl leading-tight max-w-4xl">Three founders. <em className="text-primary">Zero MBAs.</em></h2>
+        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {team.map((t, i) => (
             <div key={t.name} className="group">
               <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-card">
@@ -82,42 +82,6 @@ function WhoPage() {
               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-primary">Rule 0{i + 1}</p>
               <h3 className="mt-4 font-serif text-3xl">{p.t}</h3>
               <p className="mt-3 text-muted-foreground leading-relaxed">{p.b}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="container-x py-24 md:py-32 border-b border-border">
-        <p className="eyebrow">By the numbers</p>
-        <h2 className="mt-6 font-serif text-4xl md:text-6xl leading-tight max-w-4xl">Three years. <em className="text-primary">No layoffs caused.</em></h2>
-        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          {[
-            { v: "47", l: "Mid-market deployments to date" },
-            { v: "$38M+", l: "Aggregate annual savings delivered" },
-            { v: "94%", l: "Avg back-office cost reduction" },
-            { v: "0", l: "Forced layoffs caused — every replaced role was redeployed or attrited" },
-          ].map((s) => (
-            <div key={s.l} className="border-t border-border pt-6">
-              <p className="font-serif text-5xl text-primary">{s.v}</p>
-              <p className="mt-3 text-sm text-muted-foreground">{s.l}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="container-x py-24 md:py-32 border-b border-border">
-        <p className="eyebrow">Where we sit</p>
-        <h2 className="mt-6 font-serif text-4xl md:text-5xl leading-tight max-w-3xl">Houston HQ. <em className="text-primary">Operators on three continents.</em></h2>
-        <div className="mt-14 grid md:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden">
-          {[
-            { c: "Houston, TX", b: "HQ, deployment ops, customer success." },
-            { c: "London, UK", b: "EMEA deployments and 24/7 ops handoff." },
-            { c: "Singapore", b: "APAC coverage and overnight processing." },
-          ].map((o) => (
-            <div key={o.c} className="bg-background p-10">
-              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-primary">Office</p>
-              <h3 className="mt-3 font-serif text-3xl">{o.c}</h3>
-              <p className="mt-3 text-sm text-muted-foreground">{o.b}</p>
             </div>
           ))}
         </div>

@@ -42,24 +42,8 @@ const groups = [
     title: "Trust & risk",
     items: [
       { q: "What if it breaks?", a: "It doesn't, often. When it does, we have a 24/7 ops team that triages within minutes. SLAs are written into every contract." },
-      { q: "What about security?", a: "SOC 2 Type II. Read-only access by default. Every action is logged, attributable, and reviewable in real time." },
+      { q: "What about security?", a: "SOC 2 Type II certification in progress" },
       { q: "What if I want to bring it back in-house?", a: "Then you do. We hand over documentation, runbooks, and the people who built it. No vendor lock-in. No drama." },
-    ],
-  },
-  {
-    title: "People & culture",
-    items: [
-      { q: "What happens to the team we replace?", a: "In 47 deployments we've never caused a forced layoff. Most clients redeploy people into revenue-facing roles, attrite naturally, or use the savings to fund a higher-skill hire." },
-      { q: "Will my remaining team resent the system?", a: "The opposite. The people who stay are the ones who've been quietly frustrated by the busywork. They get to do real work for the first time." },
-      { q: "Can I keep one human in the loop?", a: "Yes. Most clients keep one 'reviewer' role on critical workflows like payroll and compliance. The system drafts, the human approves." },
-    ],
-  },
-  {
-    title: "Integrations",
-    items: [
-      { q: "What if my stack isn't on your list?", a: "If it has an API, a CSV export, or a login screen, we can work with it. We've built connectors for ~140 systems and counting." },
-      { q: "Do you support on-prem ERPs?", a: "Yes. We've deployed against on-prem NetSuite, SAP B1, Microsoft Dynamics, and a handful of industry-specific systems via secure tunnel." },
-      { q: "Can the system write back to our books?", a: "Yes — but only with explicit, logged approval chains you control. Read-only is the default for the first 30 days of every deployment." },
     ],
   },
 ];

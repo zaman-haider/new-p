@@ -99,52 +99,6 @@ function FixPage() {
         </div>
       </section>
 
-      <section className="container-x py-24 md:py-32 border-b border-border">
-        <p className="eyebrow">Security & governance</p>
-        <h2 className="mt-6 font-serif text-4xl md:text-6xl leading-tight max-w-4xl">Quiet, but <em className="text-primary">accountable.</em></h2>
-        <div className="mt-14 grid md:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden">
-          {[
-            { t: "SOC 2 Type II", b: "Audited annually. Reports available under NDA before contract signature." },
-            { t: "Read-only by default", b: "We never write to a system without an explicit, logged approval chain you control." },
-            { t: "Full audit trail", b: "Every action — automated or human — is timestamped, attributed, and exportable to your SIEM." },
-            { t: "Data residency", b: "US-only data centers. Optional dedicated tenant for regulated industries." },
-            { t: "BYO encryption keys", b: "Customer-managed KMS keys supported on enterprise tier. Rotate anytime." },
-            { t: "Exit-ready", b: "Documentation, runbooks, and credentials handed back on day one if you ever leave." },
-          ].map((s) => (
-            <div key={s.t} className="bg-background p-8 hover:bg-card transition-colors">
-              <h3 className="font-serif text-2xl">{s.t}</h3>
-              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{s.b}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="container-x py-24 md:py-32 border-b border-border">
-        <div className="grid lg:grid-cols-12 gap-10">
-          <div className="lg:col-span-5">
-            <p className="eyebrow">A real cutover</p>
-            <h2 className="mt-6 font-serif text-4xl md:text-5xl leading-tight">From signed to <em className="text-primary">silent</em> in 14 days.</h2>
-            <p className="mt-6 text-muted-foreground">A specialty manufacturer in the Midwest. 12 back-office seats. $1.04M annual cost. Here's the calendar that took it to $61K.</p>
-          </div>
-          <div className="lg:col-span-7 space-y-4">
-            {[
-              { d: "Mon", t: "Audit kickoff — 90 minutes with the COO. Read-only creds issued." },
-              { d: "Wed", t: "53 recurring tasks mapped. 47 candidates for automation." },
-              { d: "Fri", t: "Stack connected — NetSuite, ADP, HubSpot, Box." },
-              { d: "Tue", t: "First overnight close runs in shadow mode. Variance: $0." },
-              { d: "Thu", t: "Compliance filings auto-drafted. Reviewed by counsel in 12 minutes." },
-              { d: "Mon", t: "Marketing newsletter sent. CTR up 18% vs. coordinator's last 6." },
-              { d: "Wed", t: "Cutover. Eleven roles transitioned. Two retained as 'human-in-the-loop' reviewers." },
-            ].map((s, i) => (
-              <div key={i} className="grid grid-cols-[60px_1fr] gap-6 border-l border-border pl-5 -ml-5">
-                <span className="font-mono text-xs text-primary">{s.d}</span>
-                <span className="text-sm">{s.t}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="container-x py-24 md:py-32">
         <div className="rounded-3xl bg-card border border-border p-10 md:p-16">
           <h2 className="font-serif text-3xl md:text-5xl max-w-3xl">See the savings on your numbers.</h2>

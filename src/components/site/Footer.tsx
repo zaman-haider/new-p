@@ -43,9 +43,10 @@ export function Footer() {
               <p className="label-mono mb-4">Office</p>
               <ul className="space-y-2.5 text-muted-foreground">
                 <li>Houston, TX</li>
-                <li>1100 Travis St, Suite 2200</li>
-                <li>hello@cutpayroll.co</li>
-                <li>+1 (713) 555-0188</li>
+                <li>5120 Woodway Dr. Ste. 10010</li>
+                <li>Houston, TX 77056</li>
+                <li>info@cutpayroll.com</li>
+                <li>+1 (832) 406-0338</li>
               </ul>
             </div>
           </div>

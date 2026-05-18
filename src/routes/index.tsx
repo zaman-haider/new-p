@@ -10,7 +10,7 @@ import ctaWarehouse from "@/assets/cta-warehouse.jpg";
 import team1 from "@/assets/team-1.jpg";
 import team2 from "@/assets/team-2.jpg";
 import team3 from "@/assets/team-3.jpg";
-import team4 from "@/assets/team-4.jpg";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -41,10 +41,10 @@ const replacements = [
 ];
 
 const team = [
-  { img: team1, name: "Marcus Hale", role: "Co-founder, CEO", bio: "Ran ops for a $40M industrial holding co. Cut its back office in half — by accident." },
-  { img: team2, name: "Elena Rivers", role: "Co-founder, COO", bio: "Ex–Big Four auditor who got tired of watching companies pay for the same mistake twice." },
-  { img: team3, name: "Sam Okafor", role: "Co-founder, CTO", bio: "Built automation systems for three Fortune 500s before deciding mid-market needed it more." },
-  { img: team4, name: "Diana Park", role: "Co-founder, Head of Deployment", bio: "20 years in finance ops. Has fired more useless software than most people have used." },
+  { img: team1, name: "Brent Franklin", role: "Founder & Chief Executive Officer, Rise Capital Group", bio: "Founder and CEO of Rise Capital Group, a privately held investment firm focused on oil and gas acquisition and development. Brent has built and scaled multiple seven and eight-figure companies while overseeing significant investor capital across active energy ventures. With a blue-collar, hands-on background and experience in real estate, drilling, and oilfield operations, Brent brings a disciplined and operationally driven approach to business. A Texas native and former Military Police officer, he is known for leadership, execution, and building ventures centered around long-term growth and responsible domestic energy development." },
+  
+  { img: team2, name: "Daniel Lehotsky", role: "CO FOUNDER, GROWTH & MARKETING STRATEGY", bio: "Co Founder and growth strategist with a background in digital marketing, paid advertising, lead generation, automation, and brand positioning. Daniel has built his experience around helping businesses increase visibility, improve customer acquisition, and create marketing systems designed to drive measurable revenue. With a focus on performance, strategy, and digital infrastructure, Daniel brings a strong understanding of how to connect attention with business growth. His work spans campaign strategy, advertising funnels, CRM workflows, audience targeting, and conversion focused marketing." },
+  { img: team3, name: "Lyth Elkour", role: "Co-Founder, Sales & Operations", bio: "Lyth ne high-performance sales se apna career shuru kiya, Uplink Ads co-found kiya, aur fir CutPayroll ke operations ko expand kiya. Woh direct client acquisition, revenue growth, aur pressure mein efficiently scale karne wale AI systems banane ke liye jaane jaate hain. Unka focus execution, relationships, aur long-term business growth par hai. Unka sales, operations, aur execution ko bridge karne ka tarika multiple ventures ke expansion mein madadgar raha hai. Woh client relationships aur strategy mein actively involved rehte hain , aur unka approach accountability aur sustainable growth par emphasize karta hai." },
 ];
 
 const faqs = [
@@ -348,7 +348,7 @@ function Home() {
           We're not Silicon Valley engineers shipping a demo. We're operators who've run real
           companies, made real payroll, and signed the front of real checks.
         </p>
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {team.map((t, i) => (
             <div key={t.name} className="group">
               <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-card">

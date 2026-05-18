@@ -47,13 +47,10 @@ function ContactPage() {
           </div>
           <div className="space-y-4">
             <p className="eyebrow">Or reach us directly</p>
-            <p className="flex items-center gap-3 text-sm"><Mail className="h-4 w-4 text-primary" /> hello@cutpayroll.co</p>
-            <p className="flex items-center gap-3 text-sm"><Phone className="h-4 w-4 text-primary" /> +1 (713) 555-0188</p>
-            <p className="flex items-center gap-3 text-sm"><MapPin className="h-4 w-4 text-primary" /> 1100 Travis St, Houston, TX</p>
+            <p className="flex items-center gap-3 text-sm"><Mail className="h-4 w-4 text-primary" /> info@cutpayroll.com</p>
+            <p className="flex items-center gap-3 text-sm"><Phone className="h-4 w-4 text-primary" /> +1 (832) 406-0338</p>
+            <p className="flex items-center gap-3 text-sm"><MapPin className="h-4 w-4 text-primary" /> 5120 Woodway Dr. Ste. 10010, Houston, TX 77056</p>
           </div>
-          <blockquote className="border-l-2 border-primary pl-5 font-serif italic text-2xl leading-snug">
-            "We sent the audit on a Wednesday. They signed on Friday. Live in 11 days." <span className="block mt-3 not-italic font-sans text-xs text-muted-foreground">— Diana Park, Head of Deployment</span>
-          </blockquote>
         </aside>
 
         <div className="lg:col-span-8">
@@ -89,42 +86,6 @@ function ContactPage() {
               <p className="text-xs text-muted-foreground">By submitting, you agree to receive a one-time custom audit. We don't add you to a drip campaign. We hate them too.</p>
             </form>
           )}
-        </div>
-      </section>
-
-      <section className="container-x py-20 md:py-28 border-t border-border">
-        <p className="eyebrow">What happens after you submit</p>
-        <h2 className="mt-6 font-serif text-4xl md:text-5xl leading-tight max-w-3xl">Four steps. <em className="text-primary">No call required.</em></h2>
-        <div className="mt-14 grid md:grid-cols-4 gap-8">
-          {[
-            { d: "Hour 0", t: "We read it.", b: "An operator — not a sales rep — reviews your submission within the business day." },
-            { d: "Hour 12", t: "We model it.", b: "We build a custom spend model against benchmarks from your industry and headcount band." },
-            { d: "Hour 36", t: "We write it.", b: "A 4-page audit lands in your inbox: tasks mapped, roles flagged, dollar figure attached." },
-            { d: "Hour 48", t: "You decide.", b: "Reply if you want to talk. Ignore it if you don't. We won't drip-email you." },
-          ].map((s) => (
-            <div key={s.d}>
-              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-primary">{s.d}</p>
-              <h3 className="mt-3 font-serif text-2xl">{s.t}</h3>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{s.b}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="container-x py-20 md:py-28 border-t border-border">
-        <p className="eyebrow">FAQ · the short version</p>
-        <div className="mt-10 grid md:grid-cols-2 gap-10">
-          {[
-            { q: "Is the audit really free?", a: "Yes. No card, no call, no follow-up sequence. We do roughly 30 a month and one in three becomes a customer — that math works for us." },
-            { q: "Will you talk to my CFO directly?", a: "Happily. Just put their email in the notes field and we'll loop them in on the audit delivery." },
-            { q: "What if I'm just researching?", a: "Then research. The audit is a real document with real numbers. Use it to benchmark, even if you never hire us." },
-            { q: "How private is my data?", a: "We sign an NDA before the audit if you want one. The submission itself never leaves our SOC 2 environment." },
-          ].map((f) => (
-            <div key={f.q} className="border-t border-border pt-6">
-              <h3 className="font-serif text-xl">{f.q}</h3>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{f.a}</p>
-            </div>
-          ))}
         </div>
       </section>
     </Layout>
