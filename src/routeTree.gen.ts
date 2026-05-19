@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as WhoWeAreRouteImport } from './routes/who-we-are'
 import { Route as ProblemRouteImport } from './routes/problem'
+import { Route as PartnersRouteImport } from './routes/partners'
 import { Route as NumbersRouteImport } from './routes/numbers'
 import { Route as IndustriesRouteImport } from './routes/industries'
 import { Route as FixRouteImport } from './routes/fix'
@@ -27,6 +28,11 @@ const WhoWeAreRoute = WhoWeAreRouteImport.update({
 const ProblemRoute = ProblemRouteImport.update({
   id: '/problem',
   path: '/problem',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PartnersRoute = PartnersRouteImport.update({
+  id: '/partners',
+  path: '/partners',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NumbersRoute = NumbersRouteImport.update({
@@ -73,6 +79,7 @@ export interface FileRoutesByFullPath {
   '/fix': typeof FixRoute
   '/industries': typeof IndustriesRoute
   '/numbers': typeof NumbersRoute
+  '/partners': typeof PartnersRoute
   '/problem': typeof ProblemRoute
   '/who-we-are': typeof WhoWeAreRoute
 }
@@ -84,6 +91,7 @@ export interface FileRoutesByTo {
   '/fix': typeof FixRoute
   '/industries': typeof IndustriesRoute
   '/numbers': typeof NumbersRoute
+  '/partners': typeof PartnersRoute
   '/problem': typeof ProblemRoute
   '/who-we-are': typeof WhoWeAreRoute
 }
@@ -96,6 +104,7 @@ export interface FileRoutesById {
   '/fix': typeof FixRoute
   '/industries': typeof IndustriesRoute
   '/numbers': typeof NumbersRoute
+  '/partners': typeof PartnersRoute
   '/problem': typeof ProblemRoute
   '/who-we-are': typeof WhoWeAreRoute
 }
@@ -109,6 +118,7 @@ export interface FileRouteTypes {
     | '/fix'
     | '/industries'
     | '/numbers'
+    | '/partners'
     | '/problem'
     | '/who-we-are'
   fileRoutesByTo: FileRoutesByTo
@@ -120,6 +130,7 @@ export interface FileRouteTypes {
     | '/fix'
     | '/industries'
     | '/numbers'
+    | '/partners'
     | '/problem'
     | '/who-we-are'
   id:
@@ -131,6 +142,7 @@ export interface FileRouteTypes {
     | '/fix'
     | '/industries'
     | '/numbers'
+    | '/partners'
     | '/problem'
     | '/who-we-are'
   fileRoutesById: FileRoutesById
@@ -143,6 +155,7 @@ export interface RootRouteChildren {
   FixRoute: typeof FixRoute
   IndustriesRoute: typeof IndustriesRoute
   NumbersRoute: typeof NumbersRoute
+  PartnersRoute: typeof PartnersRoute
   ProblemRoute: typeof ProblemRoute
   WhoWeAreRoute: typeof WhoWeAreRoute
 }
@@ -161,6 +174,13 @@ declare module '@tanstack/react-router' {
       path: '/problem'
       fullPath: '/problem'
       preLoaderRoute: typeof ProblemRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/partners': {
+      id: '/partners'
+      path: '/partners'
+      fullPath: '/partners'
+      preLoaderRoute: typeof PartnersRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/numbers': {
@@ -223,6 +243,7 @@ const rootRouteChildren: RootRouteChildren = {
   FixRoute: FixRoute,
   IndustriesRoute: IndustriesRoute,
   NumbersRoute: NumbersRoute,
+  PartnersRoute: PartnersRoute,
   ProblemRoute: ProblemRoute,
   WhoWeAreRoute: WhoWeAreRoute,
 }

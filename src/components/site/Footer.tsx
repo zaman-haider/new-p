@@ -34,6 +34,7 @@ export function Footer() {
               <p className="label-mono mb-4">Company</p>
               <ul className="space-y-2.5">
                 <li><Link to="/who-we-are" className="hover:text-primary">Who We Are</Link></li>
+                                <li><Link to="/partners" className="hover:text-primary">Partners</Link></li>
                 <li><Link to="/industries" className="hover:text-primary">Industries</Link></li>
                 <li><Link to="/faq" className="hover:text-primary">FAQ</Link></li>
                 <li><Link to="/contact" className="hover:text-primary">Contact</Link></li>

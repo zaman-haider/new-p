@@ -9,7 +9,7 @@ const nav = [
   { to: "/numbers", num: "04", label: "The Numbers" },
   { to: "/who-we-are", num: "05", label: "Who We Are" },
   { to: "/industries", num: "06", label: "Industries" },
-  { to: "/faq", num: "07", label: "FAQ" },
+  { to: "/partners", num: "07", label: "Partners" },
 ] as const;
 
 export function Header() {
